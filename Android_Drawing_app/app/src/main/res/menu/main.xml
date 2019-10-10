@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/normal"
+            android:title="@string/normalLine" />
+
+        <item
+            android:id="@+id/blur"
+            android:title="@string/blurLine" />
+        <item
+            android:id="@+id/circle_menu"
+            android:title="@string/circle" />
+
+        <item
+            android:id="@+id/rectangle_menu"
+            android:title="@string/rectangle" />
+
+        <item
+            android:id="@+id/save"
+            android:title="@string/save" />
+
+        <item
+            android:id="@+id/clear"
+            android:title="@string/clearAll" />
+
+    </group>
+
+</menu>

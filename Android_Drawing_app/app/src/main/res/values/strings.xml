@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Kevin Drawing App</string>
+    <string name="point">Point</string>
+    <string name="size">Size</string>
+    <string name="color">Color</string>
+    <string name="line_size">Line size</string>
+    <string name="background_color">Back-ground color</string>
+    <string name="shape_size">Shape size</string>
+    <string name="shape_color">Shape color</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="normalLine">Normal Line</string>
+    <string name="blurLine">Blur Line</string>
+    <string name="circle">Circle</string>
+    <string name="rectangle">Rectangle</string>
+    <string name="save">Save</string>
+    <string name="clearAll">Clear All</string>
+
+    <string-array name="spinner_line_size_text">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="spinner_color_text">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Purple</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Black</item>
+        <item>White</item>
+    </string-array>
+
+    <string-array name="spinner_bg_color_text">
+        <item>White</item>
+        <item>Black</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Purple</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+    </string-array>
+
+    <string-array name="spinner_shape_size_text">
+        <item>50f</item>
+        <item>100f</item>
+        <item>200f</item>
+        <item>300f</item>
+        <item>400f</item>
+        <item>500f</item>
+        <item>600f</item>
+    </string-array>
+</resources>

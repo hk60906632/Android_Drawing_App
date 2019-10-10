@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Feedback on graphics assignment</title>
+<style>pre, .indent {margin-left:20px;}</style>
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/highlight.js/9.9.0/styles/xcode.min.css"/>
+<script
+  src="https://cdn.jsdelivr.net/highlight.js/9.9.0/highlight.min.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/highlight.js/9.9.0/languages/java.min.js"></script>
+<script>
+  addEventListener('load', start);
+  function start() {
+    var pres = document.querySelectorAll("pre");
+    for (var i in pres) hljs.highlightBlock(pres[i]);
+  }
+</script>
+</head>
+<body>
+
+<h1>Feedback on Graphics assignment</h1>
+
+<p></p>
+
+<p>You've produced a very good android drawing app. It is reasonably well designed,
+and you've learned a lot from it.
+</p>
+
+<p><ul>
+<li>Mark for development skills 14/20</li>
+<li>Mark for technical skills 28/40</li>
+<li>Mark for creativity 28/40</li>
+</ul>
+</p>
+
+<p></p>
+
+<h2>General feedback</h2>
+
+<p>I gave marks out of 20, 40, 40 for development, technical and creative
+issues.</p>
+
+<p>The development mark is for showing that you've learned something from the
+unit. So, it is for having multiple classes, showing a sense of design, and
+getting a whole program together and working, possibly using an IDE or other
+tools.</p>
+
+<p>The technical mark is for exploring graphics in some direction or other, and
+showing off some sophistication.  This might be in animation, or user
+interaction, or special library features, or integrating graphics with some
+other logic.</p>
+
+<p>The creativity mark is for interesting ideas, or twists on old ideas, or
+technical exploration of possibilities, or polish, or artistic flair, or
+anything else that impressed me.</p>
+
+<p>For many of you, your model is closely associated with graphics, making
+testing difficult. That is OK for an assignment of this size, and I wasn't picky
+about it in the marking. But it is important to remember that in larger
+projects, just because you have a GUI, that's no excuse for ignoring best
+practices. You need small or smallish classes, with tiny methods, total
+robustness, low dependencies, and plenty of automatic testing. Graphics
+libraries tend to force your design in a particular direction, but it is up to
+you to decide who is in control. So make this a priority for the next project
+you do that involves graphics.</p>
+
+<p>Take Tetris for example, which several of you implemented. Maybe you got the
+logic from a tutorial. If so, you probably need more practice in developing
+logic without a tutorial. If not, the logic is sufficiently complex to need
+independent, automatic testing. If I was implementing Tetris, my graphical view
+component would draw a grid of coloured squares, nothing else. It would know
+nothing about pieces or their shapes or their movements or the progress of the
+game. After each time step, the view would ask the model what colour to draw
+each square. That's all. The model would deal with all the logic, using a grid
+of characters or other symbols, and have no dependency whatsoever on graphics
+library classes. In fact, to avoid being influenced by the graphics library, I
+would write the model first, with automatic testing, and with text printout for
+interactive testing, before adding a GUI.</p>
+
+</body>
+</html>
